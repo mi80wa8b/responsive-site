@@ -58,10 +58,16 @@ a:active
 /* header
 ------------------------------------------------------------*/
 .flexible-images {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
+@media (max-width:768px){
+    .flexible-images{
+        max-height: 400px;
+        width: 100%;
+    }
+}
 
 /* Media Querie
 ------------------------------------------------------------*/
@@ -166,8 +172,3 @@ footer
     background-color: #f8f4e6;
 }
 
-@media (max-width:768px){
-    .flexible-images{
-        height: 400px;
-    }
-}
